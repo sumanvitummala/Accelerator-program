@@ -1,0 +1,12 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: red;
+}
+.highlight{
+    background-color: yellow;
+}
+#special{
+    font-size: 24px;
+}
