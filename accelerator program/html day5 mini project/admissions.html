@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="ABC College - Admissions" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABC College | Admissions</title>
+</head>
+<body>
+<header>
+  <img src="assets/logo.png" alt="ABC College Logo" width="56" height="56" />
+  <h1>ABC College</h1>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="departments.html">Departments</a> |
+    <a href="courses.html">Courses</a> |
+    <a href="admissions.html">Admissions</a> |
+    <a href="events.html">Events</a> |
+    <a href="placements.html">Placements</a> |
+    <a href="faculty.html">Faculty</a> |
+    <a href="contact.html">Contact</a>
+  </nav>
+  <hr />
+</header>
+
+<main>
+  <section>
+    <h2>Admissions 2025</h2>
+    <!-- TODO(13): Insert process image exactly -->
+    <!-- TODO(13A) -->
+     <img src="D:\accelerator program\html mini project\assets\admissions_steps.jpg" alt="Admissions process steps diagram">
+
+    <p>Applications are invited for UG and PG programs. Read instructions carefully.</p>
+  </section>
+
+  <section>
+    <h2>Application Form</h2>
+    <form action="submit_application.html" method="post">
+      <fieldset>
+  <legend>Personal Details</legend>
+
+  <label for="applicant-name">Full Name</label>
+  <input type="text" id="applicant-name" name="name" required>
+
+  <label for="applicant-email">Email</label>
+  <input type="email" id="applicant-email" name="email" required>
+
+  <label for="applicant-phone">Phone</label>
+  <input type="tel" id="applicant-phone" name="phone" pattern="[0-9+()\s-]{7,}" required>
+</fieldset>
+<fieldset>
+  <legend>Program Preferences</legend>
+
+  <label for="program-select">Choose Program</label>
+  <select id="program-select" name="program">
+    <option value="cse">B.Tech — CSE</option>
+    <option value="ece">B.Tech — ECE</option>
+    <option value="me">B.Tech — Mechanical</option>
+    <option value="mba">MBA</option>
+  </select>
+
+  <label for="intake">Preferred Intake</label>
+  <input list="intakes" id="intake" name="intake" placeholder="Select or type">
+  <datalist id="intakes">
+    <option value="August 2025">
+    <option value="January 2026">
+    <option value="May 2026">
+  </datalist>
+</fieldset>
+<fieldset>
+  <legend>Other Info</legend>
+
+  <label for="entrance-score">Entrance Score</label>
+  <input type="number" id="entrance-score" name="score" min="0" max="1000" step="0.1">
+
+  <label for="hostel-required">
+    <input type="checkbox" id="hostel-required" name="hostel"> Hostel required
+  </label>
+
+  <label for="resume-upload">Upload Resume</label>
+  <input type="file" id="resume-upload" name="resume" accept=".pdf,.doc,.docx">
+</fieldset>
+<button type="submit">Submit Application</button>
+<button type="reset">Reset Form</button>
+
+      <!-- TODO(14): Add fieldset Personal Details -->
+      <!-- TODO(14A) -->
+      <!-- TODO(14B) -->
+      <!-- TODO(14C) -->
+       <fieldset>
+        <legend>Personal Details</legend>
+
+        <label for="applicant-name">Full Name</label>
+        <input type="text" id="applicant-name" name="name" required>
+
+        <label for="applicant-email">Email</label>
+        <input type="email" id="applicant-email" name="email" required>
+
+        <label for="applicant-phone">Phone</label>
+        <input type="tel" id="applicant-phone" name="phone" pattern="[0-9+()\s-]{7,}" required>
+      </fieldset>
+      <fieldset>
+        <legend>Program Preferences</legend>
+
+        <label for="program-select">Choose Program</label>
+        <select id="program-select" name="program">
+          <option value="cse">B.Tech — CSE</option>
+          <option value="ece">B.Tech — ECE</option>
+          <option value="me">B.Tech — Mechanical</option>
+          <option value="mba">MBA</option>
+        </select>
+
+        <label for="intake">Preferred Intake</label>
+        <input list="intakes" id="intake" name="intake" placeholder="Select or type">
+        <datalist id="intakes">
+          <option value="August 2025">
+          <option value="January 2026">
+          <option value="May 2026">
+        </datalist>
+      </fieldset>
+      <fieldset>
+        <legend>Other Info</legend>
+
+        <label for="entrance-score">Entrance Score</label>
+        <input type="number" id="entrance-score" name="score" min="0" max="1000" step="0.1">
+
+        <label for="hostel-required">
+          <input type="checkbox" id="hostel-required" name="hostel"> Hostel required
+        </label>
+
+        <label for="resume-upload">Upload Resume</label>
+        <input type="file" id="resume-upload" name="resume" accept=".pdf,.doc,.docx">
+      </fieldset>
+      <button type="submit">Submit Application</button>
+      <button type="reset">Reset Form</button>
+
+
+      <!-- TODO(15): Add fieldset Program Preferences (select + datalist) -->
+      <!-- TODO(15A) -->
+      <!-- TODO(15B) -->
+
+      <!-- TODO(16): Add fieldset Other Info (number, checkbox, file) -->
+      <!-- TODO(16A) -->
+      <!-- TODO(16B) -->
+      <!-- TODO(16C) -->
+
+      <!-- TODO(17): Add submit and reset buttons -->
+      <!-- TODO(17A) -->
+      <!-- TODO(17B) -->
+    </form>
+  </section>
+
+  <section>
+    <h2>Application Progress</h2>
+    <label for="app-progress">Application Progress</label>
+    <progress id="app-progress" value="45" max="100">45%</progress>
+
+    <label for="seat-meter">Seat filling</label>
+    <meter id="seat-meter" value="0.6" min="0" max="1">60%</meter>
+
+    <!-- TODO(18): Add progress and meter exactly -->
+    <!-- TODO(18A) -->
+    <!-- TODO(18B) -->
+     <label for="app-progress">Application Progress</label>
+      <progress id="app-progress" value="45" max="100">45%</progress>
+
+      <label for="seat-meter">Seat filling</label>
+      <meter id="seat-meter" value="0.6" min="0" max="1">60%</meter>
+
+  </section>
+</main>
+
+<footer>
+  <hr />
+  <address>ABC College, Knowledge Avenue, Hyderabad, India • +91-40-1234-5678</address>
+  <p>&copy; 2025 ABC College. All rights reserved.</p>
+</footer>
+</body>
+</html>
